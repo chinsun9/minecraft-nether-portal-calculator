@@ -1,0 +1,35 @@
+.portals {
+  .item {
+    display: grid;
+    grid-template-columns: minmax(100px, 25%) 1fr 1fr 1fr 40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+    font-size: larger;
+
+    input {
+      font-size: inherit;
+      text-align: center;
+    }
+
+    .coord {
+      margin-right: 15px;
+    }
+
+    .date {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .yymmdd {
+        margin-left: 5px;
+        font-size: small;
+      }
+    }
+
+    .delete button {
+      padding: 7px 11px;
+      border: 1px solid black;
+      border-radius: 50%;
+    }
+  }
+}

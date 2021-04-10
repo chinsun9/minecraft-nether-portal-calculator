@@ -1,3 +1,49 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
   text-align: center;
+
+  > div {
+    padding: 20px;
+  }
+
+  .calculator {
+    .head {
+      display: grid;
+      grid-template-columns: minmax(0, 25%) 1fr 1fr;
+    }
+
+    .overworld,
+    .nether {
+      display: grid;
+      grid-template-columns: minmax(0, 25%) 1fr 1fr;
+      font-size: xx-large;
+
+      span {
+        margin-right: 10px;
+      }
+
+      input {
+        min-width: 100px;
+        margin: 3px;
+        padding: 5px;
+        font-size: inherit;
+        text-align: center;
+        border-radius: 4px;
+      }
+    }
+
+    .recoredBtn {
+      button {
+        width: 100%;
+        padding: 10px;
+        color: #333;
+        font-size: x-large;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 4px;
+      }
+    }
+  }
 }
